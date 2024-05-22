@@ -27,23 +27,23 @@ async function checkWeather(){
         weatherIcon.src="img/weatherappimg/clear.png";
         document.querySelector(".weather-description").innerHTML = ("Clear");
     }
-    else if(data.current.weather_code == (1||2||3)){
+    else if(data.current.weather_code = (1||2||3)){
         weatherIcon.src="img/weatherappimg/mist.png";
         document.querySelector(".weather-description").innerHTML = ("Partly Cloudy");
     }
-    else if(data.current.weather_code == (45||48)){
+    else if(data.current.weather_code = (45||48)){
         weatherIcon.src="img/weatherappimg/clouds.png";
         document.querySelector(".weather-description").innerHTML = ("Cloudy");
     }
-    else if(data.current.weather_code == (51||53||55||56||57)){
+    else if(data.current.weather_code = (51||53||55||56||57)){
         weatherIcon.src="img/weatherappimg/drizzle.png";
         document.querySelector(".weather-description").innerHTML = ("Slight Rain/Drizzle");
     }
-    else if(data.current.weather_code == (61||63||65||66||67||80||81||82||95||96||99)){
+    else if(data.current.weather_code = (61||63||65||66||67||80||81||82||95||96||99)){
         weatherIcon.src="img/weatherappimg/rain.png";
         document.querySelector(".weather-description").innerHTML = ("Rain");
     }
-    else if(data.current.weather_code == (71||73||75||77||85||86)){
+    else if(data.current.weather_code = (71||73||75||77||85||86)){
         weatherIcon.src="img/weatherappimg/snow.png";
         document.querySelector(".weather-description").innerHTML = ("Snowy");
     }
