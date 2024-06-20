@@ -7,7 +7,7 @@ async function showPosition(position){
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
     const apiUrl = `https://api.open-meteo.com/v1/forecast?current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&timezone=auto&forecast_days=1&latitude=${lat}&longitude=${long}`;
-    const apiMapUrl = "https://api.bigdatacloud.net/data/reverse-geocode-client?localityLanguage=en&latitude=${lat}&longitude=${long}";
+    const apiMapUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?localityLanguage=en&latitude=${lat}&longitude=${long}`;
     const rep = await fetch(apiUrl);
     var data = await rep.json();
     console.log(data);
